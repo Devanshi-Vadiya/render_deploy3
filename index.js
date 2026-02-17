@@ -11,6 +11,9 @@ const users = [
     { att: "88", id: 108894, total_sub: 11, name: "Mahi", bonus: 4 }
 ];
 
+app.get("/", (req, res) => {
+    res.send("Users API is live ");
+});
 
 
 app.get("/users", (req, res) => {
@@ -106,7 +109,8 @@ app.delete("/users/:id", (req, res) => {
 });
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-    console.log(` Server is running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
