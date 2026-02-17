@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Devanshi-Vadiya/render_deploy3#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^4.22.1"
   }
 }
